@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="context" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="990.0" prefWidth="1981.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.School.controller.MainFormController">
+   <children>
+      <ImageView fitHeight="990.0" fitWidth="1981.0" layoutX="-1.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/1234.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="517.0" layoutY="225.0" prefHeight="265.0" prefWidth="1033.0" text="SCHOOL MANAGEMENT&#10;           SYSTEM" textAlignment="JUSTIFY">
+         <font>
+            <Font name="Algerian" size="96.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnStart" layoutX="862.0" layoutY="585.0" mnemonicParsing="false" onAction="#StartOnAction" prefHeight="31.0" prefWidth="135.0" style="-fx-background-color: #130f40;" text="Get Start" textFill="#f2f2f2">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="      Blank_A4" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="15485a0f-219f-4ae4-bce0-b320368d357d">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter (3)"/>
+	<queryString language="SQL">
+		<![CDATA[select * from student]]>
+	</queryString>
+	<field name="StudentIndexNumber" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="StudentID"/>
+		<property name="com.jaspersoft.studio.field.label" value="StudentID"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="student"/>
+	</field>
+	<field name="StudentFirstName" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="StudentFirstName"/>
+		<property name="com.jaspersoft.studio.field.label" value="StudentFirstName"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="student"/>
+	</field>
+	<field name="StudentLastName" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="StudentLastName"/>
+		<property name="com.jaspersoft.studio.field.label" value="StudentLastName"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="student"/>
+	</field>
+	<field name="Gender" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Gender"/>
+		<property name="com.jaspersoft.studio.field.label" value="Gender"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="student"/>
+	</field>
+	<field name="Religion" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Religion"/>
+		<property name="com.jaspersoft.studio.field.label" value="Religion"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="student"/>
+	</field>
+	<field name="BirthDay" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="BirthDay"/>
+		<property name="com.jaspersoft.studio.field.label" value="BirthDay"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="student"/>
+	</field>
+	<field name="MotherFirstName" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="MotherFirstName"/>
+		<property name="com.jaspersoft.studio.field.label" value="MotherFirstName"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="student"/>
+	</field>
+	<field name="MotherLastName" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="MotherLastName"/>
+		<property name="com.jaspersoft.studio.field.label" value="MotherLastName"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="student"/>
+	</field>
+	<field name="FatherFirstName" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="FatherFirstName"/>
+		<property name="com.jaspersoft.studio.field.label" value="FatherFirstName"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="student"/>
+	</field>
+	<field name="FatherLastName" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="FatherLastName"/>
+		<property name="com.jaspersoft.studio.field.label" value="FatherLastName"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="student"/>
+	</field>
+	<field name="FartherOccupation" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="FartherOccupation"/>
+		<property name="com.jaspersoft.studio.field.label" value="FartherOccupation"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="student"/>
+	</field>
+	<field name="StudentAddress" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="StudentAddress"/>
+		<property name="com.jaspersoft.studio.field.label" value="StudentAddress"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="student"/>
+	</field>
+	<field name="Contact" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Contact"/>
+		<property name="com.jaspersoft.studio.field.label" value="Contact"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="student"/>
+	</field>
+	<group name="StudentID">
+		<groupExpression><![CDATA[$F{StudentIndexNumber}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="148" splitType="Stretch">
+			<staticText>
+				<reportElement x="160" y="10" width="250" height="55" uuid="be112e5f-6a1c-4969-b7bf-01e7547964ca"/>
+				<textElement>
+					<font fontName="Bodoni MT Black" size="29"/>
+				</textElement>
+				<text><![CDATA[Student Details]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="424" splitType="Stretch">
+			<textField>
+				<reportElement x="130" y="20" width="80" height="30" uuid="e55b0a44-b030-4cf5-8fa7-ad1ff264ec35">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="8e4adc7d-1a1b-4b50-9c21-7d92c08e855e"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{StudentIndexNumber}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="20" width="100" height="30" uuid="3b19f292-8d28-40c8-9661-5cae7a5922a3">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="8e4adc7d-1a1b-4b50-9c21-7d92c08e855e"/>
+				</reportElement>
+				<text><![CDATA[StudentID]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="130" y="80" width="100" height="30" uuid="9242a915-5548-4002-8a26-a0462963d29b"/>
+				<textFieldExpression><![CDATA[$F{StudentFirstName}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="80" width="100" height="30" uuid="15c2b5e1-e659-4b8d-8f8a-049313c30bf5"/>
+				<text><![CDATA[StudentFirstName]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="130" y="140" width="100" height="30" uuid="a4757ad2-ec6e-4002-b7bf-5f10507723a1"/>
+				<textFieldExpression><![CDATA[$F{StudentLastName}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="140" width="100" height="30" uuid="192603b8-6745-459a-98c2-ffe92cc9d4d6"/>
+				<text><![CDATA[StudentLastName]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="130" y="200" width="100" height="30" uuid="ea09a2d4-2ad0-4f3e-91ab-a81746df7564"/>
+				<textFieldExpression><![CDATA[$F{Gender}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="200" width="100" height="30" uuid="f9603457-8650-4815-9674-59144d415821"/>
+				<text><![CDATA[Gender]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="130" y="260" width="100" height="30" uuid="d11324d6-3037-4155-91bb-044e8f7803c2"/>
+				<textFieldExpression><![CDATA[$F{Religion}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="260" width="100" height="30" uuid="950a9981-52d2-43a2-a385-4c70b9a29bc2"/>
+				<text><![CDATA[Religion]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="300" y="80" width="100" height="30" uuid="c518eb8a-3165-4de6-9509-7ae91f4d8cc5"/>
+				<textFieldExpression><![CDATA[$F{MotherFirstName}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="300" y="20" width="100" height="30" uuid="70ce2834-e175-4659-b3c2-2d89c63089d2"/>
+				<text><![CDATA[MotherFirstName]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="430" y="80" width="100" height="30" uuid="370f38d7-b62e-4a76-97e6-0cbd18a797d5"/>
+				<textFieldExpression><![CDATA[$F{MotherLastName}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="430" y="20" width="100" height="30" uuid="ec5faf18-8193-447e-8965-e987af495903"/>
+				<text><![CDATA[MotherLastName]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="300" y="200" width="100" height="30" uuid="252d8af5-b02b-40a4-8b74-5e828acfb6df"/>
+				<textFieldExpression><![CDATA[$F{FatherFirstName}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="300" y="140" width="100" height="30" uuid="61377fe5-332d-4c6d-9eac-dc24b05476ff"/>
+				<text><![CDATA[FatherFirstName]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="430" y="200" width="100" height="30" uuid="800dd942-3b00-4d66-bbcd-cbf1bbac04e3"/>
+				<textFieldExpression><![CDATA[$F{FatherLastName}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="430" y="140" width="100" height="30" uuid="90a96df5-9638-407a-9fb3-419dd05aa137"/>
+				<text><![CDATA[FatherLastName]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="300" y="320" width="100" height="30" uuid="df24ee93-fbb8-481d-838e-aafd494415da"/>
+				<textFieldExpression><![CDATA[$F{FartherOccupation}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="300" y="260" width="100" height="30" uuid="853277d0-824d-4116-8441-f911904fccc7"/>
+				<text><![CDATA[FartherOccupation]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="130" y="320" width="100" height="30" uuid="6fe4e56d-881a-4a73-a65d-e0342d960f09"/>
+				<textFieldExpression><![CDATA[$F{StudentAddress}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="320" width="100" height="30" uuid="63ad420e-89cc-4fa0-a083-d0ba3fa93f2d"/>
+				<text><![CDATA[StudentAddress]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="130" y="380" width="100" height="30" uuid="92825a26-56d4-4b01-b48e-24f44d8bca0d"/>
+				<textFieldExpression><![CDATA[$F{Contact}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="380" width="100" height="30" uuid="cdb68b8b-b493-490f-8a34-fbd99e243321"/>
+				<text><![CDATA[Contact]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

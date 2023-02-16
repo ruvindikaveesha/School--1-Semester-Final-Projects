@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="context" prefHeight="941.0" prefWidth="1641.0" style="-fx-background-color: #778ca3;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.School.controller.TeacherManageFormController">
+   <children>
+      <AnchorPane layoutX="33.0" layoutY="554.0" prefHeight="368.0" prefWidth="1500.0" style="-fx-background-color: #ffffff;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <TableView fx:id="tblTeacher" layoutX="20.0" layoutY="43.0" prefHeight="306.0" prefWidth="1450.0" styleClass="table-view1">
+              <columns>
+                <TableColumn fx:id="colID" prefWidth="180.3333282470703" text="ID" />
+                <TableColumn fx:id="colName" prefWidth="230.6666717529297" text="Name" />
+                  <TableColumn fx:id="colAddress" prefWidth="250.0" text="Address" />
+                  <TableColumn fx:id="colGender" prefWidth="299.0" text="Gender" />
+                  <TableColumn fx:id="colReligion" prefWidth="253.33331298828125" text="Religion" />
+                  <TableColumn fx:id="colContact" prefWidth="290.6666259765625" text="Contact" />
+              </columns>
+            </TableView>
+            <Label layoutX="20.0" layoutY="14.0" text="All Teachers">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="31.0" layoutY="6.0" text="Teacher Add Subject Form" textFill="#ebdfdf">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtTeacherFirstName" layoutX="64.0" layoutY="142.0" onKeyReleased="#textField_key_Released" prefHeight="31.0" prefWidth="317.0" promptText="Ruvindi" styleClass="textPane" />
+      <Label layoutX="67.0" layoutY="115.0" text="Full Name*" textFill="#141111">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="67.0" layoutY="65.0" text="Teacher ID :" textFill="#070606">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="64.0" layoutY="273.0" text="Gender" textFill="#070505">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="60.0" layoutY="360.0" text="Religion" textFill="#030202">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtAddress" layoutX="64.0" layoutY="220.0" onKeyReleased="#textField_key_Released" prefHeight="31.0" prefWidth="317.0" promptText="123/A Colombo 7" styleClass="textPane" />
+      <Label layoutX="67.0" layoutY="195.0" text="Address*">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtContact" layoutX="56.0" layoutY="485.0" onKeyReleased="#textField_key_Released" prefHeight="31.0" prefWidth="317.0" promptText="0782345323" styleClass="textPane" />
+      <Label layoutX="57.0" layoutY="455.0" text="Contact*" textFill="#110d0d">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtTeacherID" layoutX="201.0" layoutY="57.0" prefHeight="31.0" prefWidth="169.0" promptText="T-001">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></JFXTextField>
+      <TextField fx:id="txtGender" layoutX="61.0" layoutY="301.0" onKeyReleased="#textField_key_Released" prefHeight="31.0" prefWidth="317.0" promptText="Gender" styleClass="textPane" />
+      <TextField fx:id="txtReligion" layoutX="57.0" layoutY="390.0" onKeyReleased="#textField_key_Released" prefHeight="31.0" prefWidth="317.0" promptText="Religion" styleClass="textPane" />
+      <TableView fx:id="tblTeacherSubject" layoutX="671.0" layoutY="211.0" prefHeight="289.0" prefWidth="317.0">
+         <columns>
+            <TableColumn fx:id="colSubject" prefWidth="316.0" text="Subject" />
+         </columns>
+      </TableView>
+      <JFXComboBox fx:id="cmbSubjectID" layoutX="558.0" layoutY="96.0" prefHeight="26.0" prefWidth="221.0" />
+      <Label layoutX="566.0" layoutY="52.0" text="Select Subject" textFill="#070505">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblSubjectName" layoutX="807.0" layoutY="107.0" prefHeight="16.0" prefWidth="138.0" text="Subject Name" textFill="#141212">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblAlreadyAdded" layoutX="585.0" layoutY="152.0" prefHeight="16.0" prefWidth="138.0" text="Already Added" textFill="#6b1010">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="952.0" layoutY="101.0" onAction="#addSubjectForTeacher" prefHeight="39.0" prefWidth="116.0" ripplerFill="BLACK" style="-fx-background-color: #3742fa;" text="Add" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="savebtn" buttonType="RAISED" layoutX="1236.0" layoutY="241.0" onAction="#teacherSaveOnAction" prefHeight="39.0" prefWidth="141.0" ripplerFill="BLACK" style="-fx-background-color: #3742fa;" text="Save" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnSearch" buttonType="RAISED" layoutX="1237.0" layoutY="155.0" onAction="#teacherSearchOnAction" prefHeight="39.0" prefWidth="137.0" ripplerFill="BLACK" style="-fx-background-color: #ffd32a#ffd32a;" text="Search" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnUpdateStudent" buttonType="RAISED" layoutX="1238.0" layoutY="413.0" onAction="#teacherUpdateOnAction" prefHeight="39.0" prefWidth="137.0" ripplerFill="BLACK" style="-fx-background-color: #44bd32;" text="Upadate" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnDeleteStudent" buttonType="RAISED" layoutX="1240.0" layoutY="325.0" onAction="#teacherDeleteOnAction" prefHeight="39.0" prefWidth="137.0" ripplerFill="BLACK" style="-fx-background-color: #ff3838#ff3838;" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="1136.0" layoutY="27.0" onAction="#printTacherDetailsOnAction" prefHeight="49.0" prefWidth="251.0" style="-fx-background-color: #005500; -fx-background-radius: 20;" text="Teacher Detalis" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="40.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../Downloads/1-Semester-Final-Project-master/1-Semester-Final-Project-master/src/Assets/printer.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXButton>
+   </children>
+</AnchorPane>

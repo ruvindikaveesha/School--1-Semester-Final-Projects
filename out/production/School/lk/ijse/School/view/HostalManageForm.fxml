@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="HostalManageContext" prefHeight="941.0" prefWidth="1641.0" style="-fx-background-color: #778ca3;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.School.controller.HostalManageFormController">
+   <children>
+      <AnchorPane layoutX="55.0" layoutY="391.0" prefHeight="502.0" prefWidth="1500.0" style="-fx-background-color: #ffffffff; -fx-background-radius: 20;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <Label layoutX="25.0" layoutY="25.0" text="All Rooms">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </Label>
+            <TableView fx:id="tblAllHostal" layoutX="21.0" layoutY="76.0" prefHeight="414.0" prefWidth="1465.0">
+               <columns>
+                  <TableColumn fx:id="colHostalID" prefWidth="291.0" text="Hostal ID" />
+                  <TableColumn fx:id="colHostalName" prefWidth="447.0" text="Hostal Name" />
+                  <TableColumn fx:id="colHostalType" prefWidth="135.0" text="Hostal Type" />
+                  <TableColumn fx:id="colNoOfBed" prefWidth="170.0" text="No of Room" />
+                  <TableColumn fx:id="colHostalContact" prefWidth="75.0" text="Hostal Contact" />
+               </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+            <Separator layoutX="149.0" layoutY="42.0" prefHeight="0.0" prefWidth="840.0" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="41.0" layoutY="22.0" prefHeight="36.0" prefWidth="205.0" text="Hostal Manage" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="65.0" layoutY="102.0" text="Hostal ID">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtHostalID" layoutX="65.0" layoutY="145.0" />
+      <Label layoutX="348.0" layoutY="102.0" text="Hostal Name">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtHostalName" layoutX="348.0" layoutY="145.0" />
+      <Label layoutX="658.0" layoutY="96.0" text="Hostal Type">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtHostalType" layoutX="658.0" layoutY="145.0" />
+      <Label layoutX="969.0" layoutY="96.0" text="No of Room">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNoOfRoom" layoutX="969.0" layoutY="145.0" />
+      <Label layoutX="1264.0" layoutY="96.0" text="Hostal Contact">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtHostalContact" layoutX="1257.0" layoutY="145.0" onKeyReleased="#keyReleasedOnAction" />
+      <JFXButton fx:id="savebtn" buttonType="RAISED" layoutX="601.0" layoutY="262.0" onAction="#SaveOnAction" prefHeight="39.0" prefWidth="140.0" ripplerFill="BLACK" style="-fx-background-color: #3742fa;" text="Save" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnUpdate" buttonType="RAISED" layoutX="821.0" layoutY="262.0" onAction="#UpdateOnAction" prefHeight="39.0" prefWidth="127.0" ripplerFill="BLACK" style="-fx-background-color: #44bd32;" text="Upadate" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnDelete" buttonType="RAISED" layoutX="1046.0" layoutY="262.0" onAction="#DeleteOnAction" prefHeight="39.0" prefWidth="140.0" ripplerFill="BLACK" style="-fx-background-color: #eb2f06;" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnSearch" buttonType="RAISED" layoutX="388.0" layoutY="262.0" onAction="#SearchOnAction" prefHeight="39.0" prefWidth="140.0" ripplerFill="BLACK" style="-fx-background-color: #ffd32a#ffd32a;" text="Search" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
